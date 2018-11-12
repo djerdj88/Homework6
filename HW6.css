@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper1 {
+    height: 40vh;
+    background: steelblue;
+    position: relative;
+    font-size: 16px;
+}
+
+.wrapper2 {
+    height: 10vh;
+    background: gray;
+    position: relative;
+}
+
+.wrapper3 {
+    margin: auto;
+    width: 900px;
+    background: aquamarine;
+    margin-top: 20px;
+}
+
+.container1 {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+} 
+
+.amount {
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.inc {
+    background: darkblue;
+    height: 50px;
+    margin: 10px 0;
+    padding: 15px;
+}
+.exp {
+    background: darkred;
+    height: 50px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.incText, .expText{
+    float: left;
+}
+
+.incValue, .expValue {
+    float: left;
+}
+
+.incPercentage ,.expPercentage {
+    width: 40px;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 3px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.incPercentage{
+    opacity: 0;
+}
+
+.incValues, .expValues{
+    float: right;
+}
+
+.form {
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.selectIE{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nameInput {
+    width: 350px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.blueFocus:focus{
+    border: 1px solid darkblue;
+}
+
+.redFocus:focus{
+    border: 1px solid darkred;
+}
+
+.nameInput:focus, 
+.selectIE:focus,
+.valueInput:focus,
+.check:focus {
+    outline: none;
+}
+
+.valueInput {
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+i {
+  color: darkblue;
+  font-size: 36px;
+  vertical-align:middle;
+}
+.check {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.income, .expenses {
+    float: left;
+}
+
+.income {
+    margin-right: 20px;
+    color: darkblue;
+}
+
+.expenses {
+    color: darkred;
+}
+
+
+.btn {
+    border-radius: 50%;
+    display: none;
+}
+
+#block:hover > .btn{
+    display: inline;
+    margin-left: 10px;
+}
+
+.perc {
+    float: right;
+    margin-left: 10px;
+}
+
+#block:hover > .perc > .btn {
+    display: inline;
+    margin-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    text-decoration: underline;
+}
+
+.income td {
+    border-top: solid 1px darkblue;
+    border-bottom: solid 1px darkblue;
+}
+
+.expenses td {
+    border-top: solid 1px darkred;
+    border-bottom: solid 1px darkred;
+}
+
+
+.tableformat td:nth-child(1){
+    width: 300px;
+    height: 30px;
+}
+
+.tableformat td:nth-child(2){
+    width: 100px;
+    height: 30px;
+    text-align: right;
+}
+
+
+.tableformat td:nth-child(3){
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.tableformat:hover > td > .btn {
+        display: inline;
+        margin-left: 3px;
+}
+     
+
