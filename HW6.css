@@ -222,5 +222,38 @@ caption {
         display: inline;
         margin-left: 3px;
 }
-     
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .tableformat td:nth-child(1){
+        width: 200px;
+        height: 30px;
+    }
+
+    caption {
+        width: 200px;
+    }
+    .nameInput {
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tableformat td:nth-child(1){
+        width: 70px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    caption {
+        width: 70px;
+    }
+    .nameInput {
+        width: 100px;
+        
+    }
+    .valueInput {
+        width: 50px;
+    }
+}
+
 
