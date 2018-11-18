@@ -55,7 +55,7 @@ function totalAmount(){
         $(".amount").innerHTML = `+ ${numberFormat(total)}`;
         }
         else{
-        $(".amount").innerHTML = `- ${(numberFormat(total)*(-1))}`;
+        $(".amount").innerHTML = `- ${(numberFormat(total*(-1)))}`;
         }
 }
 
@@ -259,7 +259,7 @@ function setExpData() {
 }
 
 
-(function getIncomeData() {
+function getIncomeData() {
     let data = localStorage.getItem("incData");
     if (data !== null && data !== ""){
     data = data.split(",");
@@ -283,9 +283,9 @@ function setExpData() {
     }
 }
 
-})();
+};
 
-(function getExpData() {
+function getExpData() {
     let data = localStorage.getItem("expData");
     if (data !== null && data !== ""){
     data = data.split(",");
@@ -305,11 +305,14 @@ function setExpData() {
         totalPercentage = (expenses*(100)/income);
         $(".expPercentage").innerHTML = `${totalPercentage.toFixed(2)}%`;
         updatePercentage();
-        i++;
-        i++;
+        total = income - expenses;
+        totalAmount();
+        i += 2;
         }
 }
+};
 
-})();
+window.addEventListener("load", getIncomeData);
+window.addEventListener("load", getExpData);
 
 })();
